@@ -14,8 +14,9 @@ def test_division_positive():
     assert division(4, 2) == 2
 
 def test_division_negative():
-    with pytest.raises(ZeroDivisionError):
-        division(1, 0) 
+    """Test negative cases for division."""
+    assert division(6, -3) == -2
+    assert division(-6, 3) == -2
 
 def test_division_by_zero():
     """Test division by zero."""
